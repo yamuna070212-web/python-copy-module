@@ -1,0 +1,13 @@
+import copy
+
+a = [[1], [2]]
+
+b = copy.copy(a)
+
+b[0].append(100)
+
+print(a)
+print(b)
+Output
+[[1, 100], [2]]
+[[1, 100], [2]]
