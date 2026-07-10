@@ -1,0 +1,17 @@
+import copy
+
+original = [[1, 2], [3, 4]]
+
+shallow = copy.copy(original)
+deep = copy.deepcopy(original)
+
+shallow[0][0] = 99
+deep[1][1] = 88
+
+print("Original:", original)
+print("Shallow:", shallow)
+print("Deep:", deep)
+Output
+Original: [[99, 2], [3, 4]]
+Shallow: [[99, 2], [3, 4]]
+Deep: [[1, 2], [3, 88]]
