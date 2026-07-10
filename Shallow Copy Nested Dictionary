@@ -1,0 +1,13 @@
+import copy
+
+d1 = {"student": {"name": "Ram"}}
+
+d2 = copy.copy(d1)
+
+d2["student"]["name"] = "John"
+
+print(d1)
+print(d2)
+Output
+{'student': {'name': 'John'}}
+{'student': {'name': 'John'}}
