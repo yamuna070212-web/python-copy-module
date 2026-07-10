@@ -1,0 +1,17 @@
+import copy
+
+class Employee:
+    def __init__(self, name):
+        self.name = name
+
+e1 = Employee("Ram")
+
+e2 = copy.deepcopy(e1)
+
+e2.name = "John"
+
+print(e1.name)
+print(e2.name)
+Output
+Ram
+John
