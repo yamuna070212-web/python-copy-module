@@ -1,0 +1,15 @@
+import copy
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Ram")
+
+s2 = copy.copy(s1)
+
+print(s1.name)
+print(s2.name)
+Output
+Ram
+Ram
