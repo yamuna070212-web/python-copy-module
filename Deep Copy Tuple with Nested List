@@ -1,0 +1,13 @@
+import copy
+
+t1 = ([1, 2], 3)
+
+t2 = copy.deepcopy(t1)
+
+t2[0][0] = 99
+
+print(t1)
+print(t2)
+Output
+([1, 2], 3)
+([99, 2], 3)
