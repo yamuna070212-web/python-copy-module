@@ -1,0 +1,11 @@
+import copy
+
+a = [10, 20]
+
+b = copy.copy(a)
+
+print(a == b)
+print(a is b)
+Output
+True
+False
