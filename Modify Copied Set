@@ -1,0 +1,13 @@
+import copy
+
+s1 = {10, 20}
+
+s2 = copy.copy(s1)
+
+s2.add(30)
+
+print(s1)
+print(s2)
+Output
+{10, 20}
+{10, 20, 30}
