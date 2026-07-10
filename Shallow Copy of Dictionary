@@ -1,0 +1,9 @@
+import copy
+
+d1 = {"A": 10, "B": 20}
+
+d2 = copy.copy(d1)
+
+print(d2)
+Output
+{'A': 10, 'B': 20}
