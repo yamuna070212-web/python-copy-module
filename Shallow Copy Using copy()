@@ -1,0 +1,11 @@
+import copy
+
+list1 = [10, 20, 30]
+
+list2 = copy.copy(list1)
+
+print("Original:", list1)
+print("Copied:", list2)
+Output
+Original: [10, 20, 30]
+Copied: [10, 20, 30]
