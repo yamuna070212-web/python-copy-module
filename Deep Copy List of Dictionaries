@@ -1,0 +1,13 @@
+import copy
+
+students = [{"name": "Ram"}, {"name": "Asha"}]
+
+new_students = copy.deepcopy(students)
+
+new_students[0]["name"] = "John"
+
+print(students)
+print(new_students)
+Output
+[{'name': 'Ram'}, {'name': 'Asha'}]
+[{'name': 'John'}, {'name': 'Asha'}]
