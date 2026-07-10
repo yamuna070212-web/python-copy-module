@@ -1,0 +1,13 @@
+import copy
+
+list1 = [1, 2, 3]
+
+list2 = copy.copy(list1)
+
+print(id(list1))
+print(id(list2))
+Output
+140201236...
+140201890...
+
+(Addresses will differ.)
