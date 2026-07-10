@@ -1,0 +1,18 @@
+import copy
+
+data = {
+    "student": {
+        "name": "Ram",
+        "age": 20
+    }
+}
+
+new_data = copy.deepcopy(data)
+
+new_data["student"]["age"] = 21
+
+print(data)
+print(new_data)
+Output
+{'student': {'name': 'Ram', 'age': 20}}
+{'student': {'name': 'Ram', 'age': 21}}
