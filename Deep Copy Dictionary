@@ -1,0 +1,13 @@
+import copy
+
+d1 = {"marks": {"Math": 90}}
+
+d2 = copy.deepcopy(d1)
+
+d2["marks"]["Math"] = 100
+
+print(d1)
+print(d2)
+Output
+{'marks': {'Math': 90}}
+{'marks': {'Math': 100}}
