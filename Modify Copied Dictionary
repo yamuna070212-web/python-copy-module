@@ -1,0 +1,13 @@
+import copy
+
+d1 = {"A": 10}
+
+d2 = copy.copy(d1)
+
+d2["B"] = 20
+
+print(d1)
+print(d2)
+Output
+{'A': 10}
+{'A': 10, 'B': 20}
