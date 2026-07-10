@@ -1,0 +1,9 @@
+import copy
+
+s1 = {1, 2, 3}
+
+s2 = copy.copy(s1)
+
+print(s2)
+Output
+{1, 2, 3}
