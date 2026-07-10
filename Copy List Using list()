@@ -1,0 +1,7 @@
+list1 = [10, 20]
+
+list2 = list(list1)
+
+print(list2)
+Output
+[10, 20]
