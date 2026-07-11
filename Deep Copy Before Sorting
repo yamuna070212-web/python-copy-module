@@ -1,0 +1,13 @@
+import copy
+
+numbers = [5, 2, 4, 1]
+
+backup = copy.deepcopy(numbers)
+
+numbers.sort()
+
+print(backup)
+print(numbers)
+Output
+[5, 2, 4, 1]
+[1, 2, 4, 5]
