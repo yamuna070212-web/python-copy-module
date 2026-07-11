@@ -1,0 +1,16 @@
+import copy
+
+data = [
+    {"id": 1},
+    {"id": 2}
+]
+
+new_data = copy.deepcopy(data)
+
+new_data[1]["id"] = 20
+
+print(data)
+print(new_data)
+Output
+[{'id': 1}, {'id': 2}]
+[{'id': 1}, {'id': 20}]
