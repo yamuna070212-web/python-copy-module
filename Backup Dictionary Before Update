@@ -1,0 +1,16 @@
+import copy
+
+marks = {
+    "Math": 90,
+    "Science": 95
+}
+
+backup = copy.deepcopy(marks)
+
+marks["Math"] = 100
+
+print(backup)
+print(marks)
+Output
+{'Math': 90, 'Science': 95}
+{'Math': 100, 'Science': 95}
