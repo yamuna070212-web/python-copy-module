@@ -1,0 +1,17 @@
+import copy
+
+class Student:
+    def __init__(self):
+        self.marks = [90, 80]
+
+s1 = Student()
+
+s2 = copy.copy(s1)
+
+s2.marks.append(100)
+
+print(s1.marks)
+print(s2.marks)
+Output
+[90, 80, 100]
+[90, 80, 100]
