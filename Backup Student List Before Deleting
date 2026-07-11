@@ -1,0 +1,13 @@
+import copy
+
+students = ["Ram", "John", "Asha"]
+
+backup = copy.deepcopy(students)
+
+students.remove("John")
+
+print(backup)
+print(students)
+Output
+['Ram', 'John', 'Asha']
+['Ram', 'Asha']
