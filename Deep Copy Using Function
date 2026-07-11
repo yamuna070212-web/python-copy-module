@@ -1,0 +1,12 @@
+import copy
+
+def duplicate(data):
+    return copy.deepcopy(data)
+
+numbers = [1, 2, 3]
+
+new_numbers = duplicate(numbers)
+
+print(new_numbers)
+Output
+[1, 2, 3]
