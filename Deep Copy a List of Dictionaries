@@ -1,0 +1,16 @@
+import copy
+
+employees = [
+    {"name": "Ram", "salary": 30000},
+    {"name": "John", "salary": 40000}
+]
+
+new_employees = copy.deepcopy(employees)
+
+new_employees[0]["salary"] = 50000
+
+print(employees)
+print(new_employees)
+Output
+[{'name': 'Ram', 'salary': 30000}, {'name': 'John', 'salary': 40000}]
+[{'name': 'Ram', 'salary': 50000}, {'name': 'John', 'salary': 40000}]
