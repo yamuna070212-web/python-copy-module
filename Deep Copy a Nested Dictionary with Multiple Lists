@@ -1,0 +1,16 @@
+import copy
+
+data = {
+    "CS": [90, 80],
+    "AI": [95, 85]
+}
+
+backup = copy.deepcopy(data)
+
+backup["CS"][0] = 100
+
+print(data)
+print(backup)
+Output
+{'CS': [90, 80], 'AI': [95, 85]}
+{'CS': [100, 80], 'AI': [95, 85]}
