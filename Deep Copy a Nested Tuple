@@ -1,0 +1,13 @@
+import copy
+
+t = ([10, 20], {"A": 30})
+
+new_t = copy.deepcopy(t)
+
+new_t[1]["A"] = 100
+
+print(t)
+print(new_t)
+Output
+([10, 20], {'A': 30})
+([10, 20], {'A': 100})
