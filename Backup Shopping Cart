@@ -1,0 +1,13 @@
+import copy
+
+cart = ["Laptop", "Mouse"]
+
+backup = copy.deepcopy(cart)
+
+cart.append("Keyboard")
+
+print(backup)
+print(cart)
+Output
+['Laptop', 'Mouse']
+['Laptop', 'Mouse', 'Keyboard']
