@@ -1,0 +1,17 @@
+import copy
+
+employees = {
+    "IT": [
+        {"name": "Ram", "salary": 30000}
+    ]
+}
+
+backup = copy.deepcopy(employees)
+
+backup["IT"][0]["salary"] = 50000
+
+print(employees)
+print(backup)
+Output
+{'IT': [{'name': 'Ram', 'salary': 30000}]}
+{'IT': [{'name': 'Ram', 'salary': 50000}]}
