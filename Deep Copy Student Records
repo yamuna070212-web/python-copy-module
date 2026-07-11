@@ -1,0 +1,16 @@
+import copy
+
+students = {
+    "CS": ["Ram", "John"],
+    "AI": ["Asha", "Riya"]
+}
+
+new_students = copy.deepcopy(students)
+
+new_students["CS"].append("David")
+
+print(students)
+print(new_students)
+Output
+{'CS': ['Ram', 'John'], 'AI': ['Asha', 'Riya']}
+{'CS': ['Ram', 'John', 'David'], 'AI': ['Asha', 'Riya']}
