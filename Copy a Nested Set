@@ -1,0 +1,9 @@
+import copy
+
+s1 = {frozenset([1, 2]), frozenset([3, 4])}
+
+s2 = copy.deepcopy(s1)
+
+print(s2)
+Output
+{frozenset({1, 2}), frozenset({3, 4})}
