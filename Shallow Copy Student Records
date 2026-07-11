@@ -1,0 +1,15 @@
+import copy
+
+students = {
+    "CS": ["Ram", "John"]
+}
+
+new_students = copy.copy(students)
+
+new_students["CS"].append("David")
+
+print(students)
+print(new_students)
+Output
+{'CS': ['Ram', 'John', 'David']}
+{'CS': ['Ram', 'John', 'David']}
