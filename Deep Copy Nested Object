@@ -1,0 +1,17 @@
+import copy
+
+class Student:
+    def __init__(self):
+        self.subjects = ["Python", "Java"]
+
+s1 = Student()
+
+s2 = copy.deepcopy(s1)
+
+s2.subjects.append("C++")
+
+print(s1.subjects)
+print(s2.subjects)
+Output
+['Python', 'Java']
+['Python', 'Java', 'C++']
