@@ -1,0 +1,16 @@
+import copy
+
+settings = {
+    "theme": "dark",
+    "font": 12
+}
+
+backup = copy.deepcopy(settings)
+
+settings["font"] = 18
+
+print(backup)
+print(settings)
+Output
+{'theme': 'dark', 'font': 12}
+{'theme': 'dark', 'font': 18}
