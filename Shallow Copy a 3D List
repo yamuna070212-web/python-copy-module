@@ -1,0 +1,15 @@
+import copy
+
+matrix = [
+    [[1, 2], [3, 4]]
+]
+
+new_matrix = copy.copy(matrix)
+
+new_matrix[0][0][0] = 99
+
+print(matrix)
+print(new_matrix)
+Output
+[[[99, 2], [3, 4]]]
+[[[99, 2], [3, 4]]]
