@@ -1,0 +1,13 @@
+import copy
+
+data = [{1, 2}, {3, 4}]
+
+new_data = copy.deepcopy(data)
+
+new_data[0].add(5)
+
+print(data)
+print(new_data)
+Output
+[{1, 2}, {3, 4}]
+[{1, 2, 5}, {3, 4}]
