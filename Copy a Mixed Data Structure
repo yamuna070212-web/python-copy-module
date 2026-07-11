@@ -1,0 +1,13 @@
+import copy
+
+data = [10, {"A": 20}, [30, 40]]
+
+new_data = copy.deepcopy(data)
+
+new_data[1]["A"] = 100
+
+print(data)
+print(new_data)
+Output
+[10, {'A': 20}, [30, 40]]
+[10, {'A': 100}, [30, 40]]
