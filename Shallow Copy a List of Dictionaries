@@ -1,0 +1,15 @@
+import copy
+
+employees = [
+    {"name": "Ram", "salary": 30000}
+]
+
+new_employees = copy.copy(employees)
+
+new_employees[0]["salary"] = 60000
+
+print(employees)
+print(new_employees)
+Output
+[{'name': 'Ram', 'salary': 60000}]
+[{'name': 'Ram', 'salary': 60000}]
