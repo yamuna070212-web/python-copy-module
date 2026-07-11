@@ -1,0 +1,16 @@
+import copy
+
+data = {
+    "A": [1, 2],
+    "B": [3, 4]
+}
+
+new_data = copy.deepcopy(data)
+
+new_data["A"].append(5)
+
+print(data)
+print(new_data)
+Output
+{'A': [1, 2], 'B': [3, 4]}
+{'A': [1, 2, 5], 'B': [3, 4]}
