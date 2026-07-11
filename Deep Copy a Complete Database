@@ -1,0 +1,17 @@
+import copy
+
+database = {
+    "students": [
+        {"name": "Ram", "marks": [90, 95]}
+    ]
+}
+
+backup = copy.deepcopy(database)
+
+backup["students"][0]["marks"][0] = 100
+
+print(database)
+print(backup)
+Output
+{'students': [{'name': 'Ram', 'marks': [90, 95]}]}
+{'students': [{'name': 'Ram', 'marks': [100, 95]}]}
